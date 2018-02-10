@@ -33,5 +33,3 @@ Remote Commands:
 EXAMPLE:
 To connect to server code running on 192.168.1.122 and listening on port 3490
 $ ./dist/Debug/GNU-Linux/tcpclient 192.168.1.122 3490
-
-
