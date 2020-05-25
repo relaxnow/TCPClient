@@ -63,12 +63,12 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tcpclient: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tcpclient ${OBJECTFILES} ${LDLIBSOPTIONS} -static -lcrypto -lpthread -ldl -lz -lboost_system -lboost_filesystem -ldl
 
-${OBJECTDIR}/sqlite3.o: sqlite3.c 
+${OBJECTDIR}/sqlite3.o: sqlite3.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/sqlite3.o sqlite3.c
 
-${OBJECTDIR}/tcpclient.o: tcpclient.cpp 
+${OBJECTDIR}/tcpclient.o: tcpclient.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -w -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tcpclient.o tcpclient.cpp
@@ -79,7 +79,6 @@ ${OBJECTDIR}/tcpclient.o: tcpclient.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tcpclient
 
 # Subprojects
 .clean-subprojects:
