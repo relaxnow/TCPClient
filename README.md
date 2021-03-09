@@ -1,6 +1,27 @@
 # TCPClient
 [Linux based] Strong Encryption Communication small footprint Client for Internet of things (IofT) devices
 
+## Build for Veracode Static Analysis
+
+First clone the repo and spin up and connect to a CentOS machine to do building on:
+```shell
+git clone https://github.com/relaxnow/TCPClient &&
+cd TCPClient &&
+docker-compose up &&
+docker exec -it tcpclient_cli_1 /bin/bash
+```
+
+Then build:
+```shell
+make clean &&
+make CONF=Debug &&
+make CONF=Veracode &&
+make CONF=VeracodeHidden
+```
+
+You'll then find the binaries in dist/Debug, dist/Veracode and dist/VeracodeHidden.
+
+## Original README
 Requires https://github.com/sabawi/TCPServer 
 
 To build on Linux:
