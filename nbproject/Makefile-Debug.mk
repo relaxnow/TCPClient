@@ -40,11 +40,15 @@ OBJECTFILES= \
 
 
 # C Compiler Flags
-CFLAGS=-fpermissive
+#CFLAGS=-fpermissive -gdwarf-2 -g3 -O0 -fno-builtin -fvisibility=hidden
+CFLAGS=-fpermissive -gdwarf-2 -g3 -O0 -fno-builtin
+#CFLAGS=-fpermissive
 
 # CC Compiler Flags
-CCFLAGS=-fpermissive
-CXXFLAGS=-fpermissive
+#CCFLAGS=-fpermissive -gdwarf-2 -g3 -O0 -fno-builtin -fvisibility=hidden
+#CXXFLAGS=-fpermissive -gdwarf-2 -g3 -O0 -fno-builtin -fvisibility=hidden
+CCFLAGS=-fpermissive -gdwarf-2 -g3 -O0 -fno-builtin
+CXXFLAGS=-fpermissive -gdwarf-2 -g3 -O0 -fno-builtin
 
 # Fortran Compiler Flags
 FFLAGS=
