@@ -53,6 +53,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
+#LDLIBSOPTIONS=-Wl,--version-script=tcpclient.expmap
 LDLIBSOPTIONS=
 
 # Build Targets

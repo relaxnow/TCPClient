@@ -31,7 +31,7 @@ DEFAULTCONF=Debug
 CONF=${DEFAULTCONF}
 
 # All Configurations
-ALLCONFS=Debug Release Veracode VeracodeHidden
+ALLCONFS=Debug Release Veracode VeracodeHidden VeracodeExportMap VeracodeExportMapInline
 
 
 # build

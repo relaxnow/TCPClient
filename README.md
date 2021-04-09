@@ -13,10 +13,7 @@ docker exec -it tcpclient_cli_1 /bin/bash
 
 Then build:
 ```shell
-make clean &&
-make CONF=Debug &&
-make CONF=Veracode &&
-make CONF=VeracodeHidden
+make clobber all
 ```
 
 You'll then find the binaries in dist/Debug, dist/Veracode and dist/VeracodeHidden.
